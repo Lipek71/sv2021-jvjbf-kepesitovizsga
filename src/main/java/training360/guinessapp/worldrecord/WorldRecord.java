@@ -30,6 +30,7 @@ public class WorldRecord {
     private Long recorderId;
 
     @OneToOne(mappedBy = "recorder", cascade = CascadeType.ALL)
+    //@ManyToOne
     private Recorder recorder;
 
     public WorldRecord(String description, Double value, String unitOfMeasure, LocalDate dateOfRecord, Long recorderId) {

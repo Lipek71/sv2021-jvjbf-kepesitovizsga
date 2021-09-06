@@ -25,6 +25,7 @@ public class Recorder {
 
     @OneToOne(orphanRemoval = true)
     @JoinColumn(name = "id")
+    //@OneToMany(mappedBy = "recorder",cascade = CascadeType.ALL)
     private WorldRecord recorder;
 
     public WorldRecord getRecorder() {
